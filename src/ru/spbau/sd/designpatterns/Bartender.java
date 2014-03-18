@@ -1,5 +1,6 @@
 package ru.spbau.sd.designpatterns;
 
+import java.util.HashMap;
 import java.util.Map;
 
 /**
@@ -9,7 +10,7 @@ import java.util.Map;
  * Time: 20:53
  */
 public class Bartender {
-    private Map<String, Receipt> receiptMap;
+    private Map<String, Receipt> receiptMap  = new HashMap<>();
 
     //Introduce class for ingredient portion and implement three receipts
     public Cocktail makeCocktail(String name) {
