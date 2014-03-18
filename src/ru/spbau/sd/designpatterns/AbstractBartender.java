@@ -9,11 +9,11 @@ import java.util.Map;
  * Date: 18.03.14
  * Time: 20:53
  */
-public class Bartender {
+public abstract class AbstractBartender {
     private Map<String, Receipt> receiptMap  = new HashMap<>();
 
     //Introduce class for ingredient portion and implement three receipts
-    public Cocktail makeCocktail(String name) {
+    public Cocktail makeStandardCocktail(String name) {
         Receipt receipt = receiptMap.get(name);
         Cocktail cocktail = new Cocktail();
         cocktail.setGlass(/*glass object here*/);
@@ -22,4 +22,9 @@ public class Bartender {
         cocktail.addStraw();
         return cocktail;
     }
+
+    //todo implement this method
+    abstract Cocktail makeFavouriteCocktail();
+
+    abstract Cocktail makeCustomCocktail(String wishes);
 }

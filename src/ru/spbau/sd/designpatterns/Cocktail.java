@@ -8,14 +8,18 @@ package ru.spbau.sd.designpatterns;
  */
 public class Cocktail {
     public void setGlass() {
+        //todo implement method
     }
 
     public void addAlcoPortion() {
+        //todo implement method
     }
 
     public void addNonAlcoPortion() {
+        //todo implement method
     }
 
     public void addStraw() {
+        //todo implement method
     }
 }
